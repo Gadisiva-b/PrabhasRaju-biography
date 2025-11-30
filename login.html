@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        video{
+            position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* makes video fit screen */
+    z-index: -1
+        }
+        .container{
+            background-color:inherit ;
+            width: 15%;
+            margin: 20% auto 10% auto;
+            padding: 10px;
+        }
+        .form-title{
+            font-size: 2rem;;
+            text-align: center;
+            font-family: serif;
+        }
+        .form-group input{
+            outline: none;
+            background-color: inherit;
+        }
+        .form-group input{
+            background-color: inherit;
+        }
+        .form-anchor  a{
+            color: black;
+            margin: 5px;
+             margin-left: 40px;
+        }
+        .form-button button{
+            margin: 15px;
+            margin-left: 110px;
+             background-color:inherit;
+        }
+    </style>
 </head>
 <body>
-    <form action="./biography.html">
-        <p><center><h1>Login</h1></center></p>
-   <p>email: <input type="email" name="email" required placeholder="enter email"/></p>
-   <p> password:<input type="password" name="password" placeholder="enter password"/></p>
-   <p> <a href="">forgotpassword / email</a></p>
-   <button>Login</button>
+    <form class="container" action="./biography.html">
+        <div class="form-title"><p>LOGIN</p></div>
+   <div class="form-group"><p>email: <input type="email" name="email" required placeholder="enter email"/></p></div>
+   <div class="form-group"><p> password:<input type="password" name="password" placeholder="enter password"/></p></div>
+   <div class="form-anchor"> <a href="">forgotpassword / email</a></div>
+   <div class="form-button"><button>Login</button></div>
     </form>
+    <video controls><source src="./video.jpg.mp4"></video>
    
     
 </body>

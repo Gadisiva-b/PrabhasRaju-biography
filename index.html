@@ -4,29 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            background-image: url(https://cdn.siasat.com/wp-content/uploads/2024/11/SPirit-660x495.jpg);
+            background-size: contain;
+            background-position-x: left;
+            background-repeat:  no-repeat;
+            height: 80vh;
+            margin:5% ;
+            
+        }
+        .container{
+            margin:5% 0% 10% auto;
+             background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/medium/spirit-et00452121-1751552524.jpg);
+             background-repeat:var(0.9px);
+            width: 25%;
+            border: 2px solid black;
+            padding-top:2%;
+            padding-bottom: 50px;
+        }
+        .title{
+            color: black;
+            font-size: 4rem;
+            text-align: center;
+            font-family: serif;
+            padding-bottom:2%;
+        }
+        .form-group input{
+            color: white;
+            padding: 5px;
+            width: 50%;
+            margin-bottom: 5%;
+            background-color: inherit;
+            border: 0.9px solid black;
+            border: none;
+            border-width: 0.9px;
+            border-bottom-style: solid;
+            outline: invert;
+        }
+        .form-gender input{
+            color: white;
+            padding-bottom: 5%;
+            margin-bottom: 5%;
+        }
+        .form-date input{
+            color: white;
+            margin-bottom: 5%;
+        }
+        .form-checkbox input{
+            margin-left: 2%;
+            margin-bottom: 5%;
+        }
+        .form-city select{
+            margin-left: 2%;
+            margin-bottom: 5%;
+        }
+        .form-button button{
+          padding: 5px 10px;
+          margin-left:40% ;
+        }
+    </style>
 </head>
 <body>
-    <form action="./login.html" target="_self">
-        <center><h1>Registration Form</h1></center>
-   <p> name:<input type="text" name="name" placeholder="enter name"/></p>
-   <p>email: <input type="email" name="email" required placeholder="enter email"/></p>
-   <p> password:<input type="password" name="password" placeholder="enter password"/></p>
-   <p> confirm password:<input type="password" name="confirmpassword" placeholder="confirm password"/></p>
-   Gender: <input type="radio" name="gender"/>male
-    <input type="radio" name="gender"/>female
-    <p>DateofBirth: <input type="date"></p>
-    <p>education:<input type="checkbox">ssc <input type="checkbox">inter <input type="checkbox">diploma <input type="checkbox">btech</p>
-    <p>City <select name="City" id="city">
+    <form class="container" action="./login.html" target="_self">
+       <p class="title">Registration Form</p>
+   <div class="form-group"> name:<input type="text" name="name" placeholder="enter name"/></div>
+   <div class="form-group">email: <input type="email" name="email" required placeholder="enter email"/></div>
+   <div class="form-group"> password:<input type="password" name="password" placeholder="enter password"/></div>
+   <div class="form-group"> confirm password:<input type="password" name="confirmpassword" placeholder="confirm password"/></div>
+   <div class="form-gender"> Gender: <input type="radio" name="gender"/>male  <input type="radio" name="gender"/>female</div>
+       <div class="form-date">DateofBirth: <input type="date"></div>
+    <div class="form-checkbox">education:<input type="checkbox">ssc <input type="checkbox">inter <input type="checkbox">diploma <input type="checkbox">btech</div>
+    <div class="form-city">City :<select name="City" id="city">
         <option value="select city">select city</option>
         <option value="vijayawada">vijayawada</option>
         <option value="guntur">guntur</option>
         <option value="chittoor">chittoor</option>
         <option value="kadapa">kadapa</option>
-    </select></p>
-    <p>upload photo: <input type="file"></p>
-    <button >register</button>
+    </select></div>
+    <div class="form-button"><button >register</button></div>
     
     </form>
+    
+    
 </body>
    
     
